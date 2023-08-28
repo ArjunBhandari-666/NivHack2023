@@ -1,0 +1,202 @@
+$dark: #141313;
+$black: #000;
+$white: #fff;
+$primary: #fff;
+$ascent: #53caee;
+$secondary: #508484;
+
+.container {
+  overflow-y: scroll;
+  overflow-x: hidden;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+  .overlay {
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    background: #141313;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+
+    .warning {
+      padding: 2rem;
+      flex-direction: column;
+      backdrop-filter: blur(20px);
+      height: 14rem;
+      max-width: 25rem;
+      text-align: center;
+      font-family: poppins;
+      align-items: center;
+      justify-content: center;
+      display: flex;
+      box-shadow: 0px 0px 10px rgb(0, 0, 0);
+      font-size: 1.3rem;
+      color: #000000;
+      border-radius: 20px;
+      background: rgb(235, 235, 140);
+    }
+  }
+
+  .header {
+    margin: 2rem;
+    display: flex;
+    margin-top: 7rem;
+    justify-content: center;
+    align-items: center;
+    gap: 0.2rem;
+    width: 100%;
+
+    input {
+      font-family: poppins;
+      background: #6c9ca6;
+      min-width: 15rem;
+      border-radius: 10px;
+      padding: 0.8rem;
+      font-size: 1rem;
+      font-weight: 500;
+      color: rgb(0, 0, 0);
+      transition: ease all 0.3s;
+
+      &::placeholder {
+        color: white;
+      }
+    }
+
+    button {
+      padding: 0.8rem;
+      cursor: pointer;
+      font-size: 1rem;
+      border-radius: 10px;
+      background: #3a6497;
+      color: rgb(255, 255, 255);
+      font-family: poppins;
+      transition: ease-in-out all 0.3s;
+
+      &:hover {
+        background: #3953cb;
+        color: rgb(0, 0, 0);
+      }
+    }
+  }
+
+  .postList {
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+    gap: 2rem;
+    max-width: 60%;
+    flex-direction: column;
+
+    @media screen and (max-width: 800px) {
+      max-width: 90%;
+    }
+
+    .card {
+      display: flex;
+      flex-direction: column;
+      gap: 0.8rem;
+      background: #313338;
+      border-radius: 20px;
+      padding: 2rem 1rem;
+      font-family: poppins;
+      color: white;
+
+      .content {
+        p {
+          color: #9c9c9b;
+          font-size: 0.9rem;
+        }
+      }
+
+      .tags {
+        display: flex;
+        flex-wrap: wrap;
+        font-family: montserrat;
+        color: #d9d9d8;
+        gap: 0.5rem;
+
+        div {
+          font-weight: 500;
+          border-radius: 10px;
+          background: #1e1f22;
+          padding: 0.4rem;
+        }
+      }
+
+      .footer {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        align-items: center;
+
+        .buttons {
+          display: flex;
+          gap: 0.5rem;
+
+          div {
+            width: 6rem;
+            text-align: center;
+            border-radius: 10px;
+            padding: 0.6rem;
+            transition: ease all 0.3s;
+            cursor: pointer;
+
+            &:nth-child(1) {
+              background: rgb(243, 66, 66);
+              color: white;
+              font-weight: 500;
+            }
+
+            &:nth-child(1):hover {
+              background: #810f0f;
+            }
+
+            &:nth-child(2) {
+              background: rgb(3, 155, 11);
+              color: white;
+              font-weight: 500;
+            }
+
+            &:nth-child(2):hover {
+              background: rgb(1, 69, 4);
+            }
+          }
+        }
+      }
+    }
+  }
+
+  // New styles for popup overlay
+  .popupOverlay {
+    position: fixed;
+    top: 100px;
+    left: 100px;
+    width: calc(100% - 200px);
+    height: calc(100% - 200px);
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+  }
+
+  .popupContainer {
+    background-color: $dark;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 2px 4px rgba(177, 0, 0, 0.1);
+  }
+
+  .popup {
+    color: $white;
+    font-size: 2rem;
+  }
+}

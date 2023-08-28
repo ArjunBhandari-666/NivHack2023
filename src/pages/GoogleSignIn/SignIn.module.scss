@@ -1,0 +1,61 @@
+$dark: #222222;
+$black: #000;
+$white: #fff;
+$primary: #fff;
+$ascent: #53caee;
+$secondary: #508484;
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  font-family: poppins;
+  // background: #393939b1;
+  z-index: 40;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  // z-index: 1000;
+  // backdrop-filter: blur(5px);
+  background: rgba(0, 0, 0, 0.507);
+  // background: #ababab95;
+
+  .closeOverlay {
+    position: absolute;
+    background: transparent;
+    height: 100vh;
+    width: 100vw;
+    z-index: 10;
+  }
+  .container {
+    z-index: 50;
+    border-radius: 1rem;
+    height: 20rem;
+    padding: 1rem;
+    gap: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 20rem;
+    box-shadow: 0px 0px 10px $dark;
+    background: $dark;
+    .header {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 1rem;
+      .icon {
+        color: #fff;
+        font-size: 4rem;
+      }
+      h1 {
+        color: $white;
+        font-family: montserrat;
+      }
+    }
+  }
+}

@@ -1,0 +1,16 @@
+export const optionList = [
+    { value: "cardiologist", label: "Cardiologist" },
+    { value: "dermatologist", label: "Dermatologist" },
+    { value: "urologist", label: "Urologist" },
+    { value: "immunologist", label: "Immunologist" },
+    { value: "neurologist", label: "Neurologist" },
+    { value: "gastroenterologist", label: "Gastroenterologist" },
+    { value: "endocrinologist", label: "Endocrinologist" },
+    { value: "pulmonologist", label: "pulmonologist" },
+    { value: "pediatrician", label: "Pediatrician" },
+    { value: "hepatologist", label: "Hepatologist" },
+    { value: "proctologist", label: "Hproctologist" },
+    { value: "vascular Surgeon", label: "Vascular Surgeon" },
+    { value: "rheumatologists", label: "Rheumatologists" },
+    { value: "ent", label: "ENT" },
+];

@@ -1,0 +1,41 @@
+.container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  h1 {
+    font-family: montserrat;
+    margin: auto;
+    width: 50rem;
+    text-align: center;
+    font-size: 3rem;
+    color: rgb(111, 111, 111);
+  }
+  .stat {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgb(196, 158, 88);
+    width: max-content;
+    font-style: poppins;
+    font-weight: 600;
+    cursor: pointer;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    padding: 1rem;
+    font-size: 1rem;
+    border-radius: 1rem;
+
+    margin: 1rem;
+    box-shadow: 0px 0px 4px rebeccapurple;
+    transition: ease all 0.3s;
+
+    &:hover {
+      scale: 110%;
+      background: white;
+      color: black;
+    }
+  }
+}

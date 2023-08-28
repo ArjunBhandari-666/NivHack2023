@@ -1,0 +1,106 @@
+$dark: #222222;
+$black: #000;
+$white: #fff;
+$primary: #80ffec;
+$ascent: #53caee;
+$secondary: #508484;
+
+.overlay {
+  font-family: poppins;
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+  z-index: 100;
+  top: 0;
+  display: flex;
+  padding: 1rem;
+  justify-content: center;
+  align-items: center;
+  background: rgba(244, 244, 244, 0);
+
+  .container {
+    display: flex;
+    text-align: left;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 10px;
+    height: 40rem;
+    width: 25rem;
+    background: white;
+    padding: 1rem;
+    margin-top: 2rem;
+
+    h2 {
+      font-size: 2.2rem;
+    }
+    p {
+      font-size: 1rem;
+    }
+    form {
+      &::-webkit-scrollbar {
+        width: 10px;
+        color: #222222;
+      }
+      overflow: scroll;
+      align-items: center;
+      justify-content: center;
+      margin-top: 1rem;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      .selector {
+        width: 100%;
+      }
+      input {
+        transition: ease all 0.3s;
+        padding: 0.85rem;
+        background: #e8f0fe;
+        border-radius: 5px;
+        width: 100%;
+        // padding: 0.5rem;
+        font-size: 1rem;
+        // border: 2px solid black;
+        color: rgb(0, 0, 0);
+
+        &:focus {
+          background: #53caee;
+        }
+        &::placeholder {
+          color: #000000;
+        }
+      }
+      .terms {
+        display: flex;
+        // width: 100%;
+        gap: 1rem;
+        // margin: 0 1rem;
+        justify-content: space-around;
+        align-items: center;
+        font-size: 0.8rem;
+        input[type="checkbox"] {
+          width: 60px;
+          height: 20px;
+        }
+      }
+      button {
+        padding: 0.85rem 1rem;
+        font-weight: 500;
+        border-radius: 10px;
+        transition: ease all 0.3s;
+        font-style: poppins;
+        color: white;
+        background: #000000;
+        font-size: 1rem;
+
+        &:disabled {
+          background: #a8a8a8;
+        }
+        // &:hover {
+        //   background: $primary;
+        //   color: rgb(0, 0, 0);
+        // }
+      }
+    }
+  }
+}

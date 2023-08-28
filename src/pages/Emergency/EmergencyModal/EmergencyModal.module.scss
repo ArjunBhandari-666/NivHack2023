@@ -1,0 +1,111 @@
+.overlay {
+  height: 100vh;
+  width: 100vw;
+  background: rgba(0, 0, 0, 0.293);
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  .container {
+    // width: 90%;
+    width: 50%;
+    // height: 100%;
+    font-family: poppins;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    padding-bottom: 2rem;
+    border-radius: 20px;
+    background: rgb(226, 225, 225);
+    @media screen and (max-width: 800px) {
+      width: 90%;
+      h1 {
+        font-size: 1.5rem;
+      }
+    }
+    header {
+      h1 {
+        padding: 1rem;
+      }
+      position: relative;
+      width: 100%;
+      display: flex;
+      //   justify-content: center;
+      align-items: center;
+      .close {
+        font-size: 2rem;
+        // top: -0.3rem;
+        right: 0;
+        position: absolute;
+        // top: -2rem;
+        // left: 5rem;
+      }
+    }
+    form {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+
+      input {
+        transition: ease all 0.3s;
+        padding: 0.85rem;
+        background: #e8f0fe;
+        border-radius: 5px;
+        width: 100%;
+        // padding: 0.5rem;
+        font-size: 1rem;
+        // border: 2px solid black;
+        color: rgb(0, 0, 0);
+
+        &:focus {
+          background: #53caee;
+        }
+        &::placeholder {
+          color: #000000;
+        }
+      }
+      textarea {
+        resize: none;
+        transition: ease all 0.3s;
+        padding: 0.85rem;
+        background: #e8f0fe;
+        border-radius: 5px;
+        width: 100%;
+        height: 10rem;
+        // padding: 0.5rem;
+        font-size: 1rem;
+        // border: 2px solid black;
+        color: rgb(0, 0, 0);
+
+        &:focus {
+          background: #53caee;
+        }
+        &::placeholder {
+          color: #000000;
+        }
+      }
+      button {
+        padding: 0.85rem 1rem;
+        font-weight: 500;
+        border-radius: 10px;
+        transition: ease all 0.3s;
+        font-style: poppins;
+        color: white;
+        background: #000000;
+        font-size: 1rem;
+
+        &:disabled {
+          background: #a8a8a8;
+        }
+        // &:hover {
+        //   background: $primary;
+        //   color: rgb(0, 0, 0);
+        // }
+      }
+    }
+  }
+}
