@@ -1,4 +1,4 @@
-# Tech-Powered Medical Networking App - NivHack 2023 Victors 🏆
+# BitWizards - NivHack 2023 Victors 🏆
 
 Exciting news! Our team soared to victory at NivHack 2023, clinching two prestigious awards - "Best use of Cloud Technology" 🌩️ and "Second Runners Up" 🥈.
 
